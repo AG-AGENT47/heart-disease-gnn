@@ -1,5 +1,9 @@
 # main.py
+import sys
 import os
+# Allow imports from repo root (config.py, models.py, data_utils.py, etc.)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
 
 # 1. Silence TensorFlow/System logs
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'

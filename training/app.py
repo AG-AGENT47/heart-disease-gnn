@@ -1,4 +1,9 @@
 # app.py
+import sys
+import os
+# Allow imports from repo root (inference.py, models.py, etc.)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 from inference import HeartDiseasePredictor

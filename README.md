@@ -7,7 +7,7 @@
 
 ## Try the Live App
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ag-agent47-heart-disease-gnn-streamlit-app.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://heart-disease-gnn-veoy8p8y2h6z2ahnszpcnm.streamlit.app/)
 
 Enter your clinical metrics (age, cholesterol, ECG, etc.) and get an instant heart disease risk assessment from a Graph Neural Network trained on real patient data.
 

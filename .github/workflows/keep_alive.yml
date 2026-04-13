@@ -1,0 +1,15 @@
+name: Keep Streamlit App Alive
+
+on:
+  schedule:
+    - cron: '0 12 */2 * *'  # Every 2 days at noon UTC
+  workflow_dispatch:          # Allow manual trigger
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit app
+        run: |
+          curl -s -o /dev/null -w "HTTP status: %{http_code}\n" \
+            https://heart-disease-gnn-veoy8p8y2h6z2ahnszpcnm.streamlit.app/
